@@ -3,11 +3,11 @@
     <div class="card-info">
 
         <h1 class="country_name">{{name}}</h1>
-        <h3 class="capital">Capital: {{capital}}</h3>
-        <h3 class="population">Population: {{population}}</h3>
+        <p class="capital">Capital: {{capital}}</p>
+        <p class="population">Population: {{population}}</>
 
         <ul class="languages">
-            <h3>Languages: {{#each languages}}</h3>
+            <p>Languages: {{#each languages}}</p>
             <li class="language_item">{{this.name}}</li>
             {{/each}}
     </div>
