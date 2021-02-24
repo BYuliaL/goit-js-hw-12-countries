@@ -11,8 +11,8 @@ function fetchCountries(searchQuery) {
   };
 
   fetch(url, options)
-    .then(response => response.json())
-    .then(countries => updateCountriesMarkup(countries))
+    .then(response => (response.ok ? response.json() : []))
+    .then(updateCountriesMarkup)
     .catch(error => console.log(error));
 }
 
